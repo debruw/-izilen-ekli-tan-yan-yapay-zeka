@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Çizim Tanıyan Yapay Sinir Ağı</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="static/css/w3.css">
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+  <button class="w3-btn w3-ripple w3-red" id="btnClear" onclick="clearDrawing()">Temizle</button>
+  <h3>Tahmin : <span id="myText"></span></h3>
+  <canvas id="canvas" ></canvas>
+
+  <!-- Trigger/Open The Modal -->
+  <button class="w3-btn w3-ripple w3-green" id="btnInfo">?</button>
+
+  <!-- The Modal -->
+  <div id="info" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">x</span>
+      <h1>Çizim Tanıyan Yapay Sinir Ağı</h1>
+      <ul>
+        <li>Bir nesne çiziniz.</li>
+        <li>Bakalım yapay sinir ağı nesneyi tanıyabilecek mi?</li>
+      </ul>
+        <p>
+          Bu proje Google AI Quickdraw game (<a href="https://quickdraw.withgoogle.com/">https://quickdraw.withgoogle.com/</a>) projesinden esinlenilmiştir.
+        </p>
+    </div>
+
+  </div>
+
+  <script src='static/js/paper-0.9.25.min.js'></script>
+
+  <script src="static/js/drawing.js"></script>
+
+</body>
+</html>
